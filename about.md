@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-### Minimalist
-Minimalist is a simple and light weighted [jekyll](http://jekyllrb.com/) theme. It focuses on a minimalistic design but still providing all functionality for a personal blog. For more information, e.g. how to use it, check out the [repository's](https://github.com/Trybnetic/minimalist) [Readme](https://github.com/Trybnetic/minimalist/blob/master/README.md).
+## About Me
+I am William Stella (Barely Literate), online I go by wastella, wstella, or poett. Some of my favorite things include, reading, eating, writing code, sleeping, exercising, socializing, listening to music. You can join me on [Spotify](https://open.spotify.com/user/Poett).
 
-### Jekyll
-[Jekyll](http://jekyllrb.com/) is a simple, ruby-based, static site generator. Jekyll generates beautifully static sites from simple text documents such as markdown. Check also the [jekyll documentation](http://jekyllrb.com/docs/home/) for what you can do with it.
+My favorite genre of books (and movies) is sci-fi. If you dont like star trek I will send you to the Guillotine with no hesitation. I am interested in data science, ML is interesting, pretty much anything that I will use day-to-day, or someone else will use, I am excited about making!
+
+Im pretty chill, I also do some math. And im kinda barely literate.
