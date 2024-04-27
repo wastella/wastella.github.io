@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-permalink: /about
+permalink: /blog
 ---
 
 # Blog
