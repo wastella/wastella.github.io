@@ -1,9 +1,12 @@
-# Hi there
-My name is Richard Yang. I'm a high school junior interested in math, physics, and computer science. 
+# Welcome!  
 
-- More about me: [About](/about.md)
-- Resources I've made: [Resources](/resources.md)
-- Some cool stuff I've found: [Recommendations](/recs.md)
+My name is William Stella. I'm a freshman in high school. I am interested in computer science and math. 
 
-Want to contact me?
-- [riyang2025@gmail.com](mailto:riyang2025@gmail.com)
+Check out the rest of my website here:
+
+- [About Me](/about.md)
+
+And feel free to contact me at:
+
+- Discord: the_poett
+- Email: williamstella28@solonschools.net
