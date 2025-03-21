@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 25px;
+    line-height: 1.0;
+}
+
+a {
+    color: blue;
+}
+
+p, li {
+    margin: 8px 0;
+}
+
+.left {
+    position: fixed;
+    width: 200px;
+}
+
+.right {
+    margin-left: 200px;
+    max-width: 600px;
+}
+
+.content {
+    display: none;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Change this to specifically target blog post listings */
+.right ul.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.right ul.blog-list li {
+    margin-bottom: 20px;
+}
+
+.right ul.blog-list li p {
+    margin: 4px 0;
+}
+
+.date {
+    color: #666;
+}
+
+.right h1 {
+    margin-top: 0;
+}
+
+.right li {
+    margin-bottom: 20px;
+}
+
+.right li p {
+    margin: 4px 0;
+}
+
