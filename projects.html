@@ -3,30 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - William Stella</title>
+    <title>Projects - William Stella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 </head>
 <body>
-    <div class="left">
-        <p><b>William Stella</b></p>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="about.html">About</a></p>
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="reading-list.html">Reading List</a></p>
-        <p><a href="blog.html">Blog</a></p>
-        <p><a href="contact.html">Contact</a></p>
-    </div>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="site-name" href="index.html">William Stella</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link is-current">Projects</a>
+                <a href="reading-list.html" class="nav-link">Reading List</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle color theme"></button>
+            </nav>
+        </aside>
 
-    <div class="right">
-        <p>Here are some projects I've completed:</p>
-        <ul>
-            <li><a href="https://github.com/wastella/dalaipy">DalaiPy</a> -- DalaiPy is a simple library that creates low-level python bindings for Dalai, which is a abstraction of llama.cpp that allows the user to make a self-hosted server to interact with local LLMs</li>
-            <li><a href="https://github.com/wastella/nasa-hackathon-proj">Agroeye</a> -- Agroeye is a tool that allows farmers to talk to a LLM about in-the-moment collected meteorological data to determine what the best course of action with their crops should be. It also generates interactive graphs to allow for better insights. You can see the website <a href="https://nasa-hackathon-proj.vercel.app/">here</a></li>  
-            <li><a href="https://github.com/wastella/codeforcer">Codeforcer</a> -- Codeforcer is a tool that allows <i>competitive programmers</i> to check their answers and interact with a specialized AI about their codeforces problems, it takes the URL then scrapes the problem and automatically generates solutions and compares user code to the solution</li>
-            <li><a href="https://github.com/wastella/gpt4all-todo-list">Smart Todo List</a> -- my "Smart" Todo list project uses gpt4all to automatically generate todo list entries based on an overall task, the user can input their overall task then follow the todo list entries and check them off as they finish them one by one </li>
-            <li><a href="https://github.com/Zxchz/uselessButton">Useless Button</a> -- this was a hardware project I did with a group for a hackathon, we made an arduino microcontroller control a LCD screen, and the screen showed an image of a button and when the physical button was pressed it had a hand on the display come in and turn off the button</li>
-            <li><a href="https://wastella.github.io/speechtimer">Speech Timer</a> -- this is a timer I built for judging speech rounds at a speech and debate tournament, it's a simple timer that allows the user to set the time for each round and the timer will count down from the set time while alerting the judge when to put up hand signals for the competitior</li>
-        </ul>
+        <main class="content">
+            <h1 class="page-title">Projects</h1>
+            <ul class="project-list">
+                <li>
+                    <a href="https://github.com/wastella/dalaipy">DalaiPy</a>
+                    <p>Simple Python bindings for Dalai, an abstraction of llama.cpp that lets you run a self-hosted server to interact with local LLMs.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/wastella/nasa-hackathon-proj">Agroeye</a>
+                    <p>A tool that lets farmers talk to an LLM about real-time meteorological data to determine the best course of action for their crops, with interactive graphs for deeper insights. <a href="https://nasa-hackathon-proj.vercel.app/">Live site.</a></p>
+                </li>
+                <li>
+                    <a href="https://github.com/wastella/codeforcer">Codeforcer</a>
+                    <p>Lets competitive programmers check their answers and talk to a specialized AI about Codeforces problems. Takes a problem URL, scrapes it, auto-generates solutions, and compares them against user code.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/wastella/gpt4all-todo-list">Smart Todo List</a>
+                    <p>Uses GPT4All to automatically generate todo list entries from a high-level task description. The user inputs their overall goal and checks off steps as they go.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/Zxchz/uselessButton">Useless Button</a>
+                    <p>A hardware hackathon project: an Arduino microcontroller drives an LCD screen showing an image of a button, and when you press the physical button, an animated hand on the display comes in and turns it off.</p>
+                </li>
+                <li>
+                    <a href="https://wastella.github.io/speechtimer">Speech Timer</a>
+                    <p>A timer for judging speech and debate rounds. Lets the judge set the time for each round and signals when to raise hand cards for the competitor.</p>
+                </li>
+            </ul>
+        </main>
     </div>
+    <script>
+        (function () {
+            var btn = document.querySelector('.theme-toggle');
+            function getIsDark() {
+                var t = document.documentElement.getAttribute('data-theme');
+                if (t === 'dark') return true;
+                if (t === 'light') return false;
+                return window.matchMedia('(prefers-color-scheme: dark)').matches;
+            }
+            btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
+            btn.addEventListener('click', function () {
+                var next = getIsDark() ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -3,44 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - William Stella</title>
+    <title>Reading List - William Stella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 </head>
 <body>
-    <div class="left">
-        <p><b>William Stella</b></p>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="about.html">About</a></p>
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="reading-list.html">Reading List</a></p>
-        <p><a href="blog.html">Blog</a></p>
-        <p><a href="contact.html">Contact</a></p>
-    </div>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="site-name" href="index.html">William Stella</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="reading-list.html" class="nav-link is-current">Reading List</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle color theme"></button>
+            </nav>
+        </aside>
 
-    <div class="right">
-        <p>Here are some books/articles I think you should read, organized by topic:</p>
-        <br>
-        <p><b>Philosophy and Critical/Postmodern Theory<b></p>
-        <ul>
-            <li><a href="https://clas.osu.edu/sites/clas.osu.edu/files/Tuck%20and%20Yang%202012%20Decolonization%20is%20not%20a%20metaphor.pdf">Decolonization is not a metaphor</a></li>
-            <li><a href="http://www.sackett.net/An-Indigenous-Peoples-History-of-the-United-States-Ortiz.pdf">An Indigenous Peoples History of the United States</a></li>  
-            <li><a href="https://ctanarchiststudygroup.noblogs.org/files/2016/10/Wilderson-III-Red-White-Black-Cinema-and-the-Structure-of-U.S.-Antagonisms.pdf">Red, White, & Black: Cinema and the Structure of U.S. Antagonisms</a></li>
-            <li><a href="https://attachments.are.na/10469553/647d35eec13c8726e838be1d7712c3a3.pdf?1611911331">Afropessimism</a></li>
-            <li><a href="https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf">Simulacra and Simulation</a></li>
-            <li><a href="https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631">Techno-Orientalism</a></li>
-        </ul>
-        <br>
-        <p><b>Poetry</b></p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=OCVZ_rlBQR8/">I Am Joaquin</a></li>
-            <li><a href="https://www.poetryfoundation.org/poems/46565/ozymandias">Ozymandias</a></li>
-        </ul>
-        <br>
-        <p><b>Misc.</b></p>
-        <ul>
-            <li><a href="https://mitadmissions.org/blogs/entry/applying_sideways/">Applying Sideways</a></li>
-        </ul>
+        <main class="content">
+            <h1 class="page-title">Reading List</h1>
+            <p>Some books and articles I think you should read, organized by topic.</p>
 
+            <h2>Philosophy and Critical/Postmodern Theory</h2>
+            <ul>
+                <li><a href="https://clas.osu.edu/sites/clas.osu.edu/files/Tuck%20and%20Yang%202012%20Decolonization%20is%20not%20a%20metaphor.pdf">Decolonization is not a metaphor</a></li>
+                <li><a href="http://www.sackett.net/An-Indigenous-Peoples-History-of-the-United-States-Ortiz.pdf">An Indigenous Peoples History of the United States</a></li>
+                <li><a href="https://ctanarchiststudygroup.noblogs.org/files/2016/10/Wilderson-III-Red-White-Black-Cinema-and-the-Structure-of-U.S.-Antagonisms.pdf">Red, White, &amp; Black: Cinema and the Structure of U.S. Antagonisms</a></li>
+                <li><a href="https://attachments.are.na/10469553/647d35eec13c8726e838be1d7712c3a3.pdf?1611911331">Afropessimism</a></li>
+                <li><a href="https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf">Simulacra and Simulation</a></li>
+                <li><a href="https://www.rutgersuniversitypress.org/techno-orientalism/9780813570631">Techno-Orientalism</a></li>
+            </ul>
+
+            <h2>Poetry</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=OCVZ_rlBQR8/">I Am Joaquin</a></li>
+                <li><a href="https://www.poetryfoundation.org/poems/46565/ozymandias">Ozymandias</a></li>
+            </ul>
+
+            <h2>Misc.</h2>
+            <ul>
+                <li><a href="https://mitadmissions.org/blogs/entry/applying_sideways/">Applying Sideways</a></li>
+            </ul>
+        </main>
     </div>
+    <script>
+        (function () {
+            var btn = document.querySelector('.theme-toggle');
+            function getIsDark() {
+                var t = document.documentElement.getAttribute('data-theme');
+                if (t === 'dark') return true;
+                if (t === 'light') return false;
+                return window.matchMedia('(prefers-color-scheme: dark)').matches;
+            }
+            btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
+            btn.addEventListener('click', function () {
+                var next = getIsDark() ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
+            });
+        })();
+    </script>
 </body>
 </html>
