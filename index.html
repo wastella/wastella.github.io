@@ -1,61 +1,139 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Stella</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
-</head>
-<body>
-    <div class="layout">
-        <aside class="sidebar">
-            <a class="site-name" href="index.html">William Stella</a>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="index.html" class="nav-link is-current">About</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="reading-list.html" class="nav-link">Reading List</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <button class="theme-toggle" aria-label="Toggle color theme"></button>
-            </nav>
-        </aside>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <main class="content">
-            <h1 class="page-title">William Stella</h1>
-            <p>I'm a highschooler. My current interests include:</p>
-            <ul>
-                <li>local LLMs</li>
-                <li>machine learning</li>
-                <li>reading</li>
-                <li>basketball</li>
-                <li>policy debate</li>
-                <li>calculus</li>
-                <li>competitive programming</li>
-            </ul>
-            <p>Check out the rest of my <a href="https://github.com/wastella">GitHub</a>, and my blog and other stuff on this website!</p>
-        </main>
-    </div>
-    <script>
-        (function () {
-            var btn = document.querySelector('.theme-toggle');
-            function getIsDark() {
-                var t = document.documentElement.getAttribute('data-theme');
-                if (t === 'dark') return true;
-                if (t === 'light') return false;
-                return window.matchMedia('(prefers-color-scheme: dark)').matches;
-            }
-            btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
-            btn.addEventListener('click', function () {
-                var next = getIsDark() ? 'light' : 'dark';
-                document.documentElement.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-                btn.setAttribute('aria-label', getIsDark() ? 'Switch to light mode' : 'Switch to dark mode');
-            });
-        })();
-    </script>
-</body>
+    <title>William Stella</title>
+
+    <meta name="author" content="William Stella">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:100%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  William Stella
+                </p>
+                <p style="text-align:center">
+                  Senior @ Solon High School
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:william.a.stella@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/wastella">Github</a> &nbsp;/&nbsp;
+                  <a href="https://instagram.com/w.a.stella">Instagram</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="interests">Interests</h2>
+                <p>
+                  Talk to me about...
+                </p>
+                <ul>
+                  <li>interpretability</li>
+                  <li>embodied AI</li>
+                  <li>books (especially sci-fi, philosophy, & web novels)</li>
+                  <li>basketball</li>
+                  <li>policy debate</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="blog">Blog</h2>
+                <p>
+                  Coming soon...
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px 20px 6px;width:100%;vertical-align:middle">
+                <h2 id="research">Research</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;"><tbody>
+            <tr class="publication">
+              <td style="padding:8px 20px;width:100%;vertical-align:middle">
+                <span class="papertitle">Research Assistant</span>, Cleveland Vision &amp; AI Lab, Cleveland, OH
+                <br>
+                <em>Jun 2026 &ndash; Aug 2026</em>
+                <br>
+                [<a href="https://wastella.github.io/one-tool-one-number/">poster</a>] [<a href="https://github.com/wastella/one-tool-one-number">code</a>] [<a href="https://github.com/wastella/navsim">code pt. 2</a>]
+                <ul style="margin:4px 0 0">
+                  <li>Ported the GPU acceleration of a frontier autonomous driving benchmark to run on Mac hardware.</li>
+                  <li>Used the ported benchmark to run experiments on deterministic tool use in agentic driving systems, and presented the findings as a poster.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="publication">
+              <td style="padding:8px 20px;width:100%;vertical-align:middle">
+                <span class="papertitle">Research Assistant</span>, Algoverse, Palo Alto, CA
+                <br>
+                <em>Jan 2026 &ndash; Aug 2026</em>
+                <br>
+                [<a href="https://openreview.net/pdf?id=Mj2lA5wF0B">paper</a>]                <ul style="margin:4px 0 0">
+                  <li>Studied whether language models can reuse cached computation across layers to cut inference memory.</li>
+                  <li>Showed that reconstruction error alone is the wrong target: error aligned with the leading query directions disrupts attention ~5&times; more than error in other directions.</li>
+                  <li>First author of the resulting paper, accepted to the Workshop on Efficient Reasoning at COLM 2026.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="reading-list">Reading List</h2>
+                <p>
+                  Books & articles I highly recommend, organized by topic.
+                </p>
+                <p style="margin-bottom:4px">
+                  <b>Sci-Fi</b>
+                </p>
+                <ul style="margin-top:0">
+                  <li><a href="https://www.goodreads.com/series/189931-remembrance-of-earth-s-past">The Three-Body Problem</a></li>
+                  <li><a href="https://www.goodreads.com/series/117100-red-rising-saga">Red Rising</a></li>
+                  <li><a href="https://www.goodreads.com/series/192752-bobiverse">
+We Are Legion (We Are Bob)</a></li>
+                </ul>
+                <p style="margin-bottom:4px">
+                  <b>Web Novels</b>
+                </p>
+                <ul style="margin-top:0">
+                  <li><a href="https://www.goodreads.com/book/show/61859147">Shadow Slave</a></li>
+                </ul>
+                <p style="margin-bottom:4px">
+                  <b>Poetry</b>
+                </p>
+                <ul style="margin-top:0">
+                  <li><a href="https://www.youtube.com/watch?v=OCVZ_rlBQR8/">I Am Joaquin</a></li>
+                  <li><a href="https://www.poetryfoundation.org/poems/46565/ozymandias">Ozymandias</a></li>
+                  <li><a href="https://poets.org/poem/do-not-go-gentle-good-night">Do not go gentle into that good night</a></li>
+                </ul>
+                <p style="margin-bottom:4px">
+                  <b>Misc.</b>
+                </p>
+                <ul style="margin-top:0">
+                  <li><a href="https://mitadmissions.org/blogs/entry/applying_sideways/">Applying Sideways</a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
 </html>
